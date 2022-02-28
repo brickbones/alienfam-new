@@ -22,6 +22,8 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    @media (max-width: 768px)
+        position: relative
     .logo
         img
             max-width: 226px
@@ -49,6 +51,13 @@ header
                 background: #65ED25
             i
                 font-size: 1.5em
+    
+.alien-pod
+    display: none
+    @media (max-width: 768px)
+        display: block
+        img
+            width: 100%
 
 h2.coming-soon
     font-family: 'Oswald', sans-serif;
@@ -65,6 +74,10 @@ h2.coming-soon
     background: -webkit-linear-gradient(#B5E8DD, #41504C)
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+    @media (max-width: 768px)
+        position: relative
+        margin: 25px 0
+        text-align: center
 
 
 
@@ -76,3 +89,5 @@ video
     transform: translateX(-50%)
     min-width: 100%
     min-height: 100%
+    @media (max-width: 768px)
+        display: none

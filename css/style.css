@@ -82,6 +82,12 @@ header {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+}
+
 header .logo img {
   max-width: 226px;
 }
@@ -132,6 +138,19 @@ header .connect a i {
   font-size: 1.5em;
 }
 
+.alien-pod {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .alien-pod {
+    display: block;
+  }
+  .alien-pod img {
+    width: 100%;
+  }
+}
+
 h2.coming-soon {
   font-family: 'Oswald', sans-serif;
   position: absolute;
@@ -150,6 +169,14 @@ h2.coming-soon {
   -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 768px) {
+  h2.coming-soon {
+    position: relative;
+    margin: 25px 0;
+    text-align: center;
+  }
+}
+
 video {
   position: fixed;
   right: 0;
@@ -159,5 +186,11 @@ video {
           transform: translateX(-50%);
   min-width: 100%;
   min-height: 100%;
+}
+
+@media (max-width: 768px) {
+  video {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
