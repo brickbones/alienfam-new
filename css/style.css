@@ -86,6 +86,12 @@ header .logo img {
   max-width: 226px;
 }
 
+@media (max-width: 768px) {
+  header .logo img {
+    max-width: 150px;
+  }
+}
+
 header .connect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +130,24 @@ header .connect a:hover {
 
 header .connect a i {
   font-size: 1.5em;
+}
+
+h2.coming-soon {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #fff;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 15px #000;
+  background: -webkit-linear-gradient(#B5E8DD, #41504C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 video {
